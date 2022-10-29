@@ -287,3 +287,61 @@
     color: #ed4c5c;
   }
 }
+
+.technology {
+  min-height: 500px;
+  padding: 63px 0;
+
+  &__title {
+    text-align: center;
+    margin-bottom: 52px;
+  }
+}
+
+.technologys {
+  list-style: none;
+  @include flex;
+
+  &__item {
+    min-height: 226px;
+    max-width: 255px;
+    text-align: center;
+    color: #101010;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+  }
+
+  &__digit {
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 120px;
+    color: rgba(16, 16, 16, 0.08);
+    position: absolute;
+    top: 13px;
+  }
+
+  &__image {
+    position: absolute;
+    top: 110px;
+    transform: translateY(-50%);
+  }
+
+  &__title {
+    margin: 151px auto 10px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  &__paragraph {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    margin: 0 30px 4px 34px;
+    min-height: 51px;
+    max-width: 191px;
+  }
+}
