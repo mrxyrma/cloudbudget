@@ -163,3 +163,65 @@ $red: #d52047;
   text-align: center;
   cursor: pointer;
 }
+
+.overview {
+  min-height: 500px;
+  
+  &__wrapper {
+    min-height: 500px;
+    display: flex;
+  }
+
+  &__text {
+    max-width: 445px;
+    margin: 140px 125px 0 0;
+  }
+
+  &__title {
+    margin-bottom: 46px;
+  }
+
+  &__paragraph {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    text-align: justify;
+    margin-bottom: 20px;
+  }
+
+  &__link {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: #ed4c5c;
+  }
+
+  &__player {
+    position: relative;
+    align-self: center;
+
+    &::before {
+      content: "";
+      width: 66px;
+      height: 66px;
+      background: url(./images/icons/play-button.svg) center center / cover no-repeat;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &__video {
+    object-fit: cover;
+    width: 445px;
+    height: 311px;
+    border-radius: 15px;
+  }
+}
+
+.section-title {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 43px;
+}
